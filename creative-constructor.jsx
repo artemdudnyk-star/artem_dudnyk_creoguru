@@ -385,7 +385,7 @@ async function fetchLLMText(prompt, maxTokens = 1200) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      model: "claude-sonnet-4-6",
+      model: "gpt-4o",
       max_tokens: maxTokens,
       messages: [{ role: "user", content: prompt }],
     }),

@@ -9,73 +9,121 @@ const DATA_FILE = join(DATA_DIR, 'tests.json')
 const SETTINGS_FILE = join(DATA_DIR, 'settings.json')
 
 export const STUB_RESPONSE = {
-  adaptation: "Ідея «Shoebox / double prints» адаптована під бабусь і дідусів: фізичний хаос коробки з подвійними відбитками прямо відображає цифровий безлад у галереї — і KeepClean прибирає саме копії, залишаючи оригінальні спогади.",
-  brief: {
-    oneLine: "Ностальгічна then/now реклама: коробка з подвійними фото переходить у телефонну галерею з дублікатами.",
+  header: {
+    tracking_id: "KC_US_GRCH_LOSS_SHOEBOX_AIUGC_28S_HOOK_v01_STORAGE",
+    one_liner: "Ностальгічна then/now реклама: коробка з подвійними фото переходить у телефонну галерею з дублікатами.",
     audience: "Fear of Delete — старші американці, які бояться втратити справжні сімейні фото.",
-    emotionalJob: "Зняти страх видалення через просту аналогію: копія не є спогадом.",
-    productionGoal: "Дати продакшну чіткий 30-секундний сценарій із кадрами, UI-плейсхолдерами, копі й CTA."
+    angle: "Loss aversion",
+    emotional_job: "Зняти страх видалення через просту аналогію: копія не є спогадом.",
+    format: "AIUGC",
+    duration_s: 28,
+    hook_0_3s: "Рука знаходить 9 однакових відбитків у старій коробці."
   },
+  quality: {
+    score: "5/5",
+    checklist: [
+      { label: "Є 0–3s hook", passed: true },
+      { label: "ASSET і COMPOSE синхронні", passed: true },
+      { label: "VO має таймінги", passed: true },
+      { label: "CTA має brand/store", passed: true },
+      { label: "AI Generated policy виконано", passed: true }
+    ]
+  },
+  asset: [
+    {
+      tc: "0–4с",
+      label: "Хук",
+      in_frame: "Стара взуттєва коробка з пожовклими фото; рука знаходить 9 однакових відбитків. Тепле кухонне світло, ностальгічний домашній кадр.",
+      camera: "UGC, handheld, легкий шейк, максимально реалістично.",
+      screen: "нема UI",
+      vo: "нема VO, тільки шелест фото",
+      audio: "тихий room tone + шелест паперу"
+    },
+    {
+      tc: "4–13с",
+      label: "Перехід у телефон",
+      in_frame: "Та сама рука бере телефон; екран у кадрі як грін-скрін, великий палець свайпає галерею.",
+      camera: "Крупний план з рук, природний motion blur.",
+      screen: "green-screen / placeholder",
+      vo: "'You would never keep nine copies of one print.' (4с) → 'So why keep them on your phone?' (8с)",
+      audio: "паперовий шелест переходить у digital tick"
+    },
+    {
+      tc: "13–22с",
+      label: "Рішення",
+      in_frame: "AI-людей немає; тільки телефон у руці з грін-скріном.",
+      camera: "Статичніше, щоб UI було легко зібрати.",
+      screen: "green-screen / placeholder",
+      vo: "'KeepClean removes duplicates, not memories.' (14с)",
+      audio: "м'який whoosh на очищенні"
+    },
+    {
+      tc: "22–28с",
+      label: "CTA",
+      in_frame: "Героїня 60+ спокійно дивиться сімейне фото на телефоні; теплий домашній інтер'єр.",
+      camera: "UGC talking-head, м'яке світло, реалістичний аматорський вигляд.",
+      screen: "green-screen / placeholder",
+      vo: "'Free up space for what matters.' (24с)",
+      audio: "теплий фінальний підйом"
+    }
+  ],
+  compose: [
+    {
+      tc: "0–4с",
+      real_ui: "UI немає; поверх кадру можна додати дрібний текст '9 copies of one memory'.",
+      trigger: "—",
+      music: "тихий ностальгічний bed",
+      subs: "Крупні саби, читаються без звуку.",
+      vo: "—",
+      brand: "—"
+    },
+    {
+      tc: "4–13с",
+      real_ui: "Реальний screen recording галереї з 9 однаковими фото; підсвітити дублікати рамками.",
+      trigger: "digital tick на кожному свайпі",
+      music: "музика тиха під VO",
+      subs: "Синхронні саби для кожної VO-репліки.",
+      vo: "VO з asset beat",
+      brand: "—"
+    },
+    {
+      tc: "13–22с",
+      real_ui: "Реальний KeepClean UI: scan → duplicates found → original kept → one tap cleanup.",
+      trigger: "whoosh + ding після cleanup",
+      music: "легкий uplift",
+      subs: "Саби синхронні, ключова фраза 'not memories' виділена.",
+      vo: "VO з asset beat",
+      brand: "Лого KeepClean на згадці бренду; дисклеймер 'AI Generated' у кутку."
+    },
+    {
+      tc: "22–28с",
+      real_ui: "Packshot KeepClean + результат очищення.",
+      trigger: "фінальний ding",
+      music: "теплий фінальний підйом",
+      subs: "CTA великим шрифтом.",
+      vo: "VO з asset beat",
+      brand: "Лого + пекшот + CTA-плашка + App Store / Google Play; дисклеймер 'AI Generated'."
+    }
+  ],
+  vo: [
+    { tc: "4с", line: "You would never keep nine copies of one print." },
+    { tc: "8с", line: "So why keep them on your phone?" },
+    { tc: "14с", line: "KeepClean removes duplicates, not memories." },
+    { tc: "24с", line: "Free up space for what matters." }
+  ],
   strengths: [
     "Самовпізнавання: кожна людина 58–70 бачила таку коробку",
     "Оффер «Прибираємо дублікати, не фото» вписується природньо"
   ],
-  weakSpots: [
-    "Аналогія може не спрацювати для тих, хто ніколи не друкував фото",
-    "Без чіткого CTA ризикує залишитися просто ностальгійним кліпом"
+  pressure_test: [
+    "Ризик: аналогія може не спрацювати для тих, хто ніколи не друкував фото. Фікс: швидко перевести в телефон на 4с.",
+    "Ризик: ностальгія може переважити CTA. Фікс: показати KeepClean UI з 13с."
   ],
-  asset: "Сцена 1: стара взуттєва коробка з пожовклими фото — рука перебирає подвоєні відбитки.\nСцена 2: смартфон, галерея — те саме фото 9 разів підряд.\nСцена 3: один тап у KeepClean → дублікати зникають, оригінали залишаються.\nVO: «You'd never keep nine copies of the same print. Why keep them on your phone?»",
-  compose: "Монтаж: cut між плівковими фото та скріншотами галереї. Субтитри у стилі машинки. Звук: шелест паперу → кліп тапа → ding звільненого місця. Лого KeepClean на фіналі. Дисклеймер «AI Generated» знизу. Пакшот: «Free up your phone today».",
-  productionBrief: {
-    hook3s: "0–3s: крупний план коробки, рука знаходить 9 однакових відбитків. Copy: 'You would never keep 9 copies of one print.'",
-    shotList: [
-      {
-        time: "0–3s",
-        visual: "Крупний план коробки з фото, рука відкладає однакові відбитки в окрему стопку.",
-        screen: "Екрана телефона немає.",
-        copy: "You would never keep 9 copies of one print.",
-        audio: "Шелест паперу, теплий домашній room tone.",
-        purpose: "Миттєво пояснити метафору дубліката."
-      },
-      {
-        time: "3–12s",
-        visual: "Та сама рука бере телефон; у галереї видно 9 однакових фото.",
-        screen: "Green-screen або реальний screen recording галереї з повтором одного фото.",
-        copy: "So why keep them on your phone?",
-        audio: "Папір переходить у легкий digital tick.",
-        purpose: "З'єднати аналогову коробку з цифровою проблемою."
-      },
-      {
-        time: "12–24s",
-        visual: "KeepClean групує дублікати, оригінал залишається видимим.",
-        screen: "UI: duplicates found, original kept, one-tap cleanup.",
-        copy: "KeepClean removes duplicates, not memories.",
-        audio: "М'який ding після підтвердження.",
-        purpose: "Закрити головний страх: оригінальні спогади в безпеці."
-      },
-      {
-        time: "24–30s",
-        visual: "Героїня спокійно дивиться сімейне фото, телефон показує більше вільного місця.",
-        screen: "Packshot KeepClean + App Store / Google Play CTA.",
-        copy: "Free up space in one tap.",
-        audio: "Теплий фінальний підйом.",
-        purpose: "Завершити дією, не тільки ностальгією."
-      }
-    ],
-    requiredAssets: [
-      "Коробка зі старими фото",
-      "Набір подвоєних відбитків",
-      "Телефон із green-screen або screen recording галереї",
-      "Screen recording KeepClean cleanup flow"
-    ],
-    qaChecklist: [
-      "У перші 3 секунди видно саме дублікати, а не просто старі фото",
-      "Оригінал явно залишається після cleanup",
-      "CTA є в останні 3 секунди",
-      "Немає обіцянок, які не показані в UI"
-    ]
-  },
-  hypothesisTag: "shoebox_dupl_boomers_stub"
+  refs: { music_ref: null, hook_ref: null, ugc_realism: true },
+  naming: {
+    tracking_id: "KC_US_GRCH_LOSS_SHOEBOX_AIUGC_28S_HOOK_v01_STORAGE",
+    ab_suffixes: ["_HOOKB", "_NOVO"]
+  }
 }
 
 function readJson(filePath, fallback) {
@@ -151,16 +199,28 @@ function sendMethodNotAllowed(res) {
   sendJson(res, 405, { error: 'Method Not Allowed' })
 }
 
-function callAnthropic(body, apiKey) {
+function proxyOpenAIResponse(body) {
+  try {
+    const data = JSON.parse(body)
+    const text = data.choices?.[0]?.message?.content || ''
+    return JSON.stringify({
+      content: [{ type: 'text', text }],
+      stop_reason: data.choices?.[0]?.finish_reason || 'stop',
+    })
+  } catch {
+    return body
+  }
+}
+
+function callOpenAI(body, apiKey) {
   return new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.anthropic.com',
-      path: '/v1/messages',
+      hostname: 'api.openai.com',
+      path: '/v1/chat/completions',
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
+        'authorization': `Bearer ${apiKey}`,
         'content-length': Buffer.byteLength(body),
       },
     }
@@ -171,7 +231,9 @@ function callAnthropic(body, apiKey) {
       proxyRes.on('end', () => {
         resolve({
           statusCode: proxyRes.statusCode || 502,
-          body: responseBody,
+          body: proxyRes.statusCode && proxyRes.statusCode >= 200 && proxyRes.statusCode < 300
+            ? proxyOpenAIResponse(responseBody)
+            : responseBody,
         })
       })
     })
@@ -235,7 +297,7 @@ export async function handleApiRequest(req, res, env = process.env) {
       return true
     }
 
-    const apiKey = env.ANTHROPIC_API_KEY
+    const apiKey = env.OPENAI_API_KEY
 
     if (!apiKey) {
       setTimeout(() => {
@@ -251,13 +313,16 @@ export async function handleApiRequest(req, res, env = process.env) {
       let upstreamBody = body
       try {
         const payload = JSON.parse(body)
-        payload.model = env.ANTHROPIC_MODEL || payload.model || 'claude-sonnet-4-6'
+        payload.model = env.OPENAI_MODEL || payload.model || 'gpt-4o'
+        if (payload.max_tokens && !payload.max_completion_tokens) {
+          payload.max_tokens = Math.min(Number(payload.max_tokens) || 1200, 8000)
+        }
         upstreamBody = JSON.stringify(payload)
       } catch {
         upstreamBody = body
       }
 
-      const upstream = await callAnthropic(upstreamBody, apiKey)
+      const upstream = await callOpenAI(upstreamBody, apiKey)
       res.statusCode = upstream.statusCode
       res.setHeader('Content-Type', 'application/json; charset=utf-8')
       res.end(upstream.body)
