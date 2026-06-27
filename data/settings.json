@@ -1,0 +1,689 @@
+{
+  "personas": [
+    {
+      "id": "boom_grch",
+      "archetypeName": "Обсесивні бабусі/дідусі",
+      "name": "Обсесивні бабусі/дідусі",
+      "description": "Фотографують онуків нонстоп — 'almost 5,000 photos in one year'.\nНе видаляють нічого, бо кожне фото = спогад",
+      "demoContext": "58–70, переважно жінки, 5–6 онуків",
+      "tag": "grch"
+    },
+    {
+      "id": "missed_moment",
+      "archetypeName": "Мами/бабусі важливих моментів",
+      "name": "Мами/бабусі важливих моментів",
+      "description": "Вже пропускали важливий момент через повний сторедж.\nБояться знову побачити 'Cannot take photo', коли дитина або онук робить щось неповторне",
+      "demoContext": "40–65, мами або бабусі, сімейні події, дні народження, свята",
+      "tag": "missed"
+    },
+    {
+      "id": "chronic_accumulator",
+      "archetypeName": "Хронічні накопичувачі галереї",
+      "name": "Хронічні накопичувачі галереї",
+      "description": "Роками знають, що галерею треба почистити, але не знають з чого почати.\nСкролять хаос, відкладають на потім і бояться випадково стерти важливе",
+      "demoContext": "45–58, Gen X, багато чатів, скриншотів, сімейних фото і дублікатів",
+      "tag": "accum"
+    },
+    {
+      "id": "slow_phone",
+      "archetypeName": "Ті, хто думають що телефон вже старий",
+      "name": "Ті, хто думають що телефон вже старий",
+      "description": "Телефон гальмує, камера відкривається повільно, застосунки зависають.\nДумають купувати новий телефон, хоча причина часто в переповненому сховищі",
+      "demoContext": "50–68, Boomers і Gen X, не пов'язують повільний телефон зі storage full",
+      "tag": "slowph"
+    }
+  ],
+  "insights": [
+    {
+      "id": "break_fear",
+      "type": "заперечення",
+      "essence": "Бояться, що «чистка» зламає телефон або зітре важливе.\nГоловний бар'єр довіри до cleaner-додатку",
+      "usage": "Safety-фрейм: прев'ю перед видаленням, «важливого не торкнемось»",
+      "tag": "break_fear"
+    },
+    {
+      "id": "tech",
+      "type": "тригер",
+      "essence": "Технічний бар'єр: майже половина Boomers потребує допомоги для налаштування девайсів",
+      "usage": "Показати максимально простий сценарій: один тап, все видно до видалення",
+      "tag": "tech"
+    },
+    {
+      "id": "memories",
+      "type": "інсайт",
+      "essence": "Бояться видаляти фото, бо це єдині спогади",
+      "usage": "Відділяти спогади від сміття: дублікати, форварди й скріни не дорівнюють сімейним фото",
+      "tag": "memories"
+    }
+  ],
+  "offers": [
+    {
+      "id": "free_trial",
+      "tag": "freetrial",
+      "product": "KeepClean",
+      "framing": "freeTrial",
+      "valueProp": "Побач скільки звільниш — ще до покупки. 1 тап, безкоштовно.",
+      "label": "Free trial: побач результат до покупки"
+    },
+    {
+      "id": "price_anchor",
+      "tag": "anchor",
+      "product": "KeepClean Premium",
+      "framing": "priceAnchor",
+      "valueProp": "Не купляй новий телефон за $800 — очисти старий за $4.99.",
+      "label": "Price anchor: $4.99 vs новий телефон за $800"
+    },
+    {
+      "id": "dupl_safe",
+      "tag": "dupl_safe",
+      "product": "KeepClean",
+      "framing": "costPerUse",
+      "valueProp": "Прибираємо дублікати й чужі форварди — твої спогади не чіпаємо.",
+      "label": "Safety frame: прибираємо дублікати, не спогади"
+    }
+  ],
+  "angles": [
+    {
+      "id": "loss_aversion",
+      "name": "Loss aversion",
+      "description": "Страх втратити цінне сильніший за бажання отримати —\n«не загуби спогади», а не «звільни місце»",
+      "tag": "loss"
+    },
+    {
+      "id": "safety_control",
+      "name": "Safety and control",
+      "description": "Головний бар'єр — страх натиснути Delete.\nКут має показувати контроль: користувач бачить прев'ю, сам підтверджує, важливе не зникає.",
+      "tag": "safe"
+    },
+    {
+      "id": "not_memories",
+      "name": "Not your memories",
+      "description": "Переозначити чистку: ми не видаляємо спогади, ми прибираємо дублікати, скріни й чужі форварди.\nФокус — «сміття не дорівнює пам'ять».",
+      "tag": "notmem"
+    },
+    {
+      "id": "future_moment",
+      "name": "Future moment",
+      "description": "Проблема не в гігабайтах, а в моменті, який можна не зняти.\nКут продає місце як готовність до наступного важливого фото або відео.",
+      "tag": "future"
+    },
+    {
+      "id": "dignity_independence",
+      "name": "Dignity and independence",
+      "description": "Не змушуй людину просити дітей про допомогу.\nКут: вона сама наводить порядок у телефоні, спокійно й без сорому.",
+      "tag": "dignity"
+    },
+    {
+      "id": "proof_reassurance",
+      "name": "Proof reassurance",
+      "description": "Людина не хоче бути першою, хто ризикує спогадами.\nКут знімає страх через приклад: інші теж боялись, але побачили прев'ю й нічого важливого не втратили.",
+      "tag": "proof"
+    }
+  ],
+  "formats": [
+    {
+      "id": "ugc",
+      "name": "UGC Story",
+      "tag": "ugc",
+      "prod": "AI-gen",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": false,
+      "productionCost": "low",
+      "coldScalable": true,
+      "note": "Особиста історія, вертикаль. Найкраще для problem-aware холодної аудиторії."
+    },
+    {
+      "id": "vsl",
+      "name": "VSL",
+      "tag": "vsl",
+      "prod": "AI-gen",
+      "awarenessFit": [
+        "warm",
+        "hot"
+      ],
+      "needsEducation": true,
+      "productionCost": "medium",
+      "coldScalable": false,
+      "note": "Топ під старшу аудиторію + едукейшн. Потрібна повна аргументація: хто клієнт, чому зараз."
+    },
+    {
+      "id": "static",
+      "name": "Static Ad",
+      "tag": "static",
+      "prod": "static",
+      "awarenessFit": [
+        "cold",
+        "warm",
+        "hot"
+      ],
+      "needsEducation": false,
+      "productionCost": "low",
+      "coldScalable": true,
+      "note": "НЕДООЦІНЕНИЙ. Дешевий, масштабується на cold. Слабкий static = skill issue, не формат."
+    },
+    {
+      "id": "longcopy_static",
+      "name": "Long Copy Static",
+      "tag": "longstatic",
+      "prod": "static",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": true,
+      "productionCost": "low",
+      "coldScalable": true,
+      "note": "НЕДООЦІНЕНИЙ. Для складних рішень де потрібен аргумент. Читають більше ніж думають."
+    },
+    {
+      "id": "dialog",
+      "name": "Dialog",
+      "tag": "dialog",
+      "prod": "AI-gen",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": true,
+      "productionCost": "low",
+      "coldScalable": true,
+      "note": "Двоє в кадрі, тепло. Природній objection handling через реальний діалог."
+    },
+    {
+      "id": "thead",
+      "name": "Talking Head",
+      "tag": "thead",
+      "prod": "office",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": false,
+      "productionCost": "medium",
+      "coldScalable": true,
+      "note": "Пряме звернення, жива зйомка. Credibility вище ніж AI-gen для скептичної аудиторії."
+    },
+    {
+      "id": "screenrec",
+      "name": "Screen Recording",
+      "tag": "screenrec",
+      "prod": "screen (real)",
+      "awarenessFit": [
+        "warm",
+        "hot"
+      ],
+      "needsEducation": true,
+      "productionCost": "low",
+      "coldScalable": false,
+      "note": "Реальний запис екрана — максимальна достовірність. Для тих хто вже знає проблему."
+    },
+    {
+      "id": "dpa",
+      "name": "DPA / Catalog",
+      "tag": "dpa",
+      "prod": "dynamic",
+      "awarenessFit": [
+        "hot"
+      ],
+      "needsEducation": false,
+      "productionCost": "low",
+      "coldScalable": false,
+      "note": "УВАГА: переатрибутовує органіку. Дивись incremental attribution. НЕ масштабувати на cold."
+    },
+    {
+      "id": "partnership",
+      "name": "Partnership / Creator",
+      "tag": "partner",
+      "prod": "partnership",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": false,
+      "productionCost": "medium",
+      "coldScalable": true,
+      "note": "НЕДОВИКОРИСТАНИЙ арбітраж. Таргетинг по аудиторії інфлюенсера — окрема cold аудиторія."
+    },
+    {
+      "id": "reaction",
+      "name": "Reaction",
+      "tag": "reaction",
+      "prod": "office",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": false,
+      "productionCost": "medium",
+      "coldScalable": true,
+      "note": "Реакція на власну галерею. Емоційне самовпізнавання."
+    },
+    {
+      "id": "beforeafter",
+      "name": "Before / After Static",
+      "tag": "beforeafter",
+      "prod": "static",
+      "awarenessFit": [
+        "cold",
+        "warm"
+      ],
+      "needsEducation": false,
+      "productionCost": "low",
+      "coldScalable": true,
+      "note": "Спліт до/після. Для transformation-кута."
+    }
+  ],
+  "seeds": [
+    {
+      "id": "shoebox",
+      "title": "Shoebox / double prints",
+      "text": "Then/now: стара взуттєва коробка з подвоєними відбитками (double prints) на кухонному столі → той самий безлад у сучасному телефоні → один тап KeepClean. Раніше перебирали руками, лишали хороше, викидали копії."
+    },
+    {
+      "id": "flextape",
+      "title": "Flex Tape leak",
+      "text": "Акваріум (= телефон) тріскає, вода з дублікатами/емейлами/іконками апок хлище назовні; кремезний майстер заклеює тріщину скотчем із лого KeepClean. Драматичний інфомерціал, проблема→миттєвий фікс."
+    },
+    {
+      "id": "elephant",
+      "title": "Elephant CEO mascot",
+      "text": "СЕО — теплий AI-слон (асоціація: память + довіра, «слон ніколи не забуває»), говорить на камеру про місію: ми оберігаємо спогади, а не видаляємо."
+    },
+    {
+      "id": "clones",
+      "title": "Crowd of clones",
+      "text": "Натовп ідентичних клонів на площі, а одна справжня унікальна людина загубилася серед копій. Дублікати ховають справжній спогад."
+    },
+    {
+      "id": "xerox",
+      "title": "Xerox-maniac",
+      "text": "Ксерокс без упину випльовує те саме фото, гора однакових аркушів росте до стелі. Найчистіша візуалізація «одне фото × тисячу разів»."
+    },
+    {
+      "id": "spam",
+      "title": "Spam pile / one real letter",
+      "text": "Поштова скринька забита однаковими листівками й рекламою, а один справжній лист поховано під ними. Мапиться на «good morning» форварди."
+    },
+    {
+      "id": "dialog",
+      "title": "Daughter + mom dialog",
+      "text": "Донька лагідно показує мамі на її телефоні: «це фото в тебе 9 разів, ці квіти прийшли в трьох чатах. Онуків ніхто не чіпає — зникнуть лише копії». Мама: «Oh… they're all still here»."
+    },
+    {
+      "id": "povgran",
+      "title": "POV grandmother screen rec",
+      "text": "POV від першої особи: руки бабусі гортають галерею, VO — сама бабуся: «I was scared to delete my photos…». Бачить, що сміття — це копії, не спогади."
+    }
+  ],
+  "generationRules": "",
+  "reference": {
+    "assetSample": "Люди, оточення, дії. Будь-який екран телефону в руках = суцільний грін-скрін. \nГероїня (наскрізно):  жінка 60–68, домашній светр, природне обличчя. Затишна вітальня.\nОкремий кліп «перші кроки»: AI-генерований вертикальний short — малюк-онук (~1 рік) робить перші невпевнені кроки по килиму; легке handheld-тремтіння, ніби знято бабусиним телефоном. Цей кліп використовується двічі: як жива дія у Сцені 1 і як відео всередині екрана у Сцені 3 (той самий момент).\n\nСцена 1 — Кошмар. Онук робить перші кроки по килиму (онук у кадрі — це сон). Бабуся радісно ахає, хапає телефон, підносить, щоб зняти — захват переходить у розпач. Погляд розпачу — НА ТЕЛЕФОН - немає пам’яті. Онук обертає голову, різко показуємо його крупним планом, і він говорить з злим лицем (You had to save the memory for this moment).  Світло злегка холодне, «сновидне» (тонко). Телефон = грін-скрін.\n\nСцена 2 — Пробудження. Героїня здригається, прокидається в кріслі, кліпає очима, розгубленість → полегшення. Світло тепер тепле, нормальне. Онука в кадрі вже немає. Телефон поряд, екран вимкнений.\n\nСцена 3 — Полегшення. Героїня сама, бере реальний телефон, відкриває й переглядає ВІДЕО, яке колись зняла сама — ті самі перші кроки онука. Усмішка, зворушення, очі теплішають. У кадрі тільки вона; реагує на екран. Телефон = грін-скрін.\n\nСцена 4 — CTA. Героїня сама, тримає телефон, спокійна й задоволена. Мінімум генерації, фон чистий під пекшот.\n\n",
+    "composeSample": "Реальний UI зі скрінрекордів + AI-кліп компонуються в грін-скрін. Саби динамічні, синхрон із VO. Музика нейтральна + тригер-звуки. Логотип на згадці бренду, пекшот на CTA. Дисклеймер «AI Generated» наскрізно.\n\nСцена 1 — Кошмар. На грін-скрін: застиглий видошукач камери + системний попап «Storage Almost Full / Cannot Take Photo» (iOS/Android під плейсмент). Тригер-звук: різкий error-тон на появі попапа — пік напруги. Музика: тепла, глухне рівно на попапі. Саб/VO: «His first steps… and no room to save them.»\nСлова онука - You had to save the memory for this moment\n\nСцена 2 — Пробудження. Екран телефону темний. Музика м'яко повертається, тепла. Звук: тихий видих + сповільнений «удар серця» (relief). Саб/VO: «…just a bad dream.»\n\nСцена 3 — Полегшення. На грін-скрін: галерея, де відкрите й програється повністю те саме відео перших кроків (AI-кліп); зверху індикатор сховища «76 GB free». Музика: теплий підйом. Звук: приємний ding при старті відео. Саб/VO: «This time, she kept it. Room to spare.»\n\nСцена 4 — KeepClean/CTA. На грін-скрін: скрінрекорд застосунку — KeepClean чистить, «12 GB freed», один тап. Логотип KeepClean на згадці бренду. CTA-плашка «Free up space in one tap» + іконки App Store / Google Play. Звук: фінальний uplift. Саб/VO: «KeepClean keeps room for every moment.»\nНаскрізно: саби обов'язкові (перегляд без звуку); дисклеймер «AI Generated» — дрібна кутова плашка від першого кадру.\n\n"
+  },
+  "products": [
+    {
+      "id": "keepclean",
+      "name": "KeepClean",
+      "tag": "KC",
+      "market": "US",
+      "category": "Mobile photo cleaner",
+      "audience": "Старші американці та Gen X, які бояться втратити сімейні фото",
+      "promise": "Видаляє дублікати й чужі форварди, звільняє місце, не торкається оригінальних спогадів",
+      "defaultProblem": "storage_full"
+    },
+    {
+      "id": "cleanerguru",
+      "name": "Cleaner Guru",
+      "tag": "CG",
+      "market": "US",
+      "category": "Mobile photo cleaner",
+      "audience": "Старші американці та Gen X, які бояться втратити сімейні фото",
+      "promise": "Видаляє дублікати й чужі форварди, звільняє місце, не торкається оригінальних спогадів",
+      "defaultProblem": "storage_full"
+    }
+  ],
+  "productSettings": {
+    "keepclean": {
+      "personas": [
+        {
+          "id": "boom_grch",
+          "archetypeName": "Обсесивні бабусі/дідусі",
+          "name": "Обсесивні бабусі/дідусі",
+          "description": "Фотографують онуків нонстоп — 'almost 5,000 photos in one year'.\nНе видаляють нічого, бо кожне фото = спогад",
+          "demoContext": "58–70, переважно жінки, 5–6 онуків",
+          "tag": "grch"
+        },
+        {
+          "id": "missed_moment",
+          "archetypeName": "Мами/бабусі важливих моментів",
+          "name": "Мами/бабусі важливих моментів",
+          "description": "Вже пропускали важливий момент через повний сторедж.\nБояться знову побачити 'Cannot take photo', коли дитина або онук робить щось неповторне",
+          "demoContext": "40–65, мами або бабусі, сімейні події, дні народження, свята",
+          "tag": "missed"
+        },
+        {
+          "id": "chronic_accumulator",
+          "archetypeName": "Хронічні накопичувачі галереї",
+          "name": "Хронічні накопичувачі галереї",
+          "description": "Роками знають, що галерею треба почистити, але не знають з чого почати.\nСкролять хаос, відкладають на потім і бояться випадково стерти важливе",
+          "demoContext": "45–58, Gen X, багато чатів, скриншотів, сімейних фото і дублікатів",
+          "tag": "accum"
+        },
+        {
+          "id": "slow_phone",
+          "archetypeName": "Ті, хто думають що телефон вже старий",
+          "name": "Ті, хто думають що телефон вже старий",
+          "description": "Телефон гальмує, камера відкривається повільно, застосунки зависають.\nДумають купувати новий телефон, хоча причина часто в переповненому сховищі",
+          "demoContext": "50–68, Boomers і Gen X, не пов'язують повільний телефон зі storage full",
+          "tag": "slowph"
+        }
+      ],
+      "insights": [
+        {
+          "id": "break_fear",
+          "type": "заперечення",
+          "essence": "Бояться, що «чистка» зламає телефон або зітре важливе.\nГоловний бар'єр довіри до cleaner-додатку",
+          "usage": "Safety-фрейм: прев'ю перед видаленням, «важливого не торкнемось»",
+          "tag": "break_fear"
+        },
+        {
+          "id": "tech",
+          "type": "тригер",
+          "essence": "Технічний бар'єр: майже половина Boomers потребує допомоги для налаштування девайсів",
+          "usage": "Показати максимально простий сценарій: один тап, все видно до видалення",
+          "tag": "tech"
+        },
+        {
+          "id": "memories",
+          "type": "інсайт",
+          "essence": "Бояться видаляти фото, бо це єдині спогади",
+          "usage": "Відділяти спогади від сміття: дублікати, форварди й скріни не дорівнюють сімейним фото",
+          "tag": "memories"
+        }
+      ],
+      "offers": [
+        {
+          "id": "free_trial",
+          "tag": "freetrial",
+          "product": "KeepClean",
+          "framing": "freeTrial",
+          "valueProp": "Побач скільки звільниш — ще до покупки. 1 тап, безкоштовно.",
+          "label": "Free trial: побач результат до покупки"
+        },
+        {
+          "id": "price_anchor",
+          "tag": "anchor",
+          "product": "KeepClean Premium",
+          "framing": "priceAnchor",
+          "valueProp": "Не купляй новий телефон за $800 — очисти старий за $4.99.",
+          "label": "Price anchor: $4.99 vs новий телефон за $800"
+        },
+        {
+          "id": "dupl_safe",
+          "tag": "dupl_safe",
+          "product": "KeepClean",
+          "framing": "costPerUse",
+          "valueProp": "Прибираємо дублікати й чужі форварди — твої спогади не чіпаємо.",
+          "label": "Safety frame: прибираємо дублікати, не спогади"
+        }
+      ],
+      "angles": [
+        {
+          "id": "loss_aversion",
+          "name": "Loss aversion",
+          "description": "Страх втратити цінне сильніший за бажання отримати —\n«не загуби спогади», а не «звільни місце»",
+          "tag": "loss"
+        },
+        {
+          "id": "safety_control",
+          "name": "Safety and control",
+          "description": "Головний бар'єр — страх натиснути Delete.\nКут має показувати контроль: користувач бачить прев'ю, сам підтверджує, важливе не зникає.",
+          "tag": "safe"
+        },
+        {
+          "id": "not_memories",
+          "name": "Not your memories",
+          "description": "Переозначити чистку: ми не видаляємо спогади, ми прибираємо дублікати, скріни й чужі форварди.\nФокус — «сміття не дорівнює пам'ять».",
+          "tag": "notmem"
+        },
+        {
+          "id": "future_moment",
+          "name": "Future moment",
+          "description": "Проблема не в гігабайтах, а в моменті, який можна не зняти.\nКут продає місце як готовність до наступного важливого фото або відео.",
+          "tag": "future"
+        },
+        {
+          "id": "dignity_independence",
+          "name": "Dignity and independence",
+          "description": "Не змушуй людину просити дітей про допомогу.\nКут: вона сама наводить порядок у телефоні, спокійно й без сорому.",
+          "tag": "dignity"
+        },
+        {
+          "id": "proof_reassurance",
+          "name": "Proof reassurance",
+          "description": "Людина не хоче бути першою, хто ризикує спогадами.\nКут знімає страх через приклад: інші теж боялись, але побачили прев'ю й нічого важливого не втратили.",
+          "tag": "proof"
+        }
+      ],
+      "formats": [
+        {
+          "id": "ugc",
+          "name": "UGC Story",
+          "tag": "ugc",
+          "prod": "AI-gen",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": false,
+          "productionCost": "low",
+          "coldScalable": true,
+          "note": "Особиста історія, вертикаль. Найкраще для problem-aware холодної аудиторії."
+        },
+        {
+          "id": "vsl",
+          "name": "VSL",
+          "tag": "vsl",
+          "prod": "AI-gen",
+          "awarenessFit": [
+            "warm",
+            "hot"
+          ],
+          "needsEducation": true,
+          "productionCost": "medium",
+          "coldScalable": false,
+          "note": "Топ під старшу аудиторію + едукейшн. Потрібна повна аргументація: хто клієнт, чому зараз."
+        },
+        {
+          "id": "static",
+          "name": "Static Ad",
+          "tag": "static",
+          "prod": "static",
+          "awarenessFit": [
+            "cold",
+            "warm",
+            "hot"
+          ],
+          "needsEducation": false,
+          "productionCost": "low",
+          "coldScalable": true,
+          "note": "НЕДООЦІНЕНИЙ. Дешевий, масштабується на cold. Слабкий static = skill issue, не формат."
+        },
+        {
+          "id": "longcopy_static",
+          "name": "Long Copy Static",
+          "tag": "longstatic",
+          "prod": "static",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": true,
+          "productionCost": "low",
+          "coldScalable": true,
+          "note": "НЕДООЦІНЕНИЙ. Для складних рішень де потрібен аргумент. Читають більше ніж думають."
+        },
+        {
+          "id": "dialog",
+          "name": "Dialog",
+          "tag": "dialog",
+          "prod": "AI-gen",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": true,
+          "productionCost": "low",
+          "coldScalable": true,
+          "note": "Двоє в кадрі, тепло. Природній objection handling через реальний діалог."
+        },
+        {
+          "id": "thead",
+          "name": "Talking Head",
+          "tag": "thead",
+          "prod": "office",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": false,
+          "productionCost": "medium",
+          "coldScalable": true,
+          "note": "Пряме звернення, жива зйомка. Credibility вище ніж AI-gen для скептичної аудиторії."
+        },
+        {
+          "id": "screenrec",
+          "name": "Screen Recording",
+          "tag": "screenrec",
+          "prod": "screen (real)",
+          "awarenessFit": [
+            "warm",
+            "hot"
+          ],
+          "needsEducation": true,
+          "productionCost": "low",
+          "coldScalable": false,
+          "note": "Реальний запис екрана — максимальна достовірність. Для тих хто вже знає проблему."
+        },
+        {
+          "id": "dpa",
+          "name": "DPA / Catalog",
+          "tag": "dpa",
+          "prod": "dynamic",
+          "awarenessFit": [
+            "hot"
+          ],
+          "needsEducation": false,
+          "productionCost": "low",
+          "coldScalable": false,
+          "note": "УВАГА: переатрибутовує органіку. Дивись incremental attribution. НЕ масштабувати на cold."
+        },
+        {
+          "id": "partnership",
+          "name": "Partnership / Creator",
+          "tag": "partner",
+          "prod": "partnership",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": false,
+          "productionCost": "medium",
+          "coldScalable": true,
+          "note": "НЕДОВИКОРИСТАНИЙ арбітраж. Таргетинг по аудиторії інфлюенсера — окрема cold аудиторія."
+        },
+        {
+          "id": "reaction",
+          "name": "Reaction",
+          "tag": "reaction",
+          "prod": "office",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": false,
+          "productionCost": "medium",
+          "coldScalable": true,
+          "note": "Реакція на власну галерею. Емоційне самовпізнавання."
+        },
+        {
+          "id": "beforeafter",
+          "name": "Before / After Static",
+          "tag": "beforeafter",
+          "prod": "static",
+          "awarenessFit": [
+            "cold",
+            "warm"
+          ],
+          "needsEducation": false,
+          "productionCost": "low",
+          "coldScalable": true,
+          "note": "Спліт до/після. Для transformation-кута."
+        }
+      ],
+      "seeds": [
+        {
+          "id": "shoebox",
+          "title": "Shoebox / double prints",
+          "text": "Then/now: стара взуттєва коробка з подвоєними відбитками (double prints) на кухонному столі → той самий безлад у сучасному телефоні → один тап KeepClean. Раніше перебирали руками, лишали хороше, викидали копії."
+        },
+        {
+          "id": "flextape",
+          "title": "Flex Tape leak",
+          "text": "Акваріум (= телефон) тріскає, вода з дублікатами/емейлами/іконками апок хлище назовні; кремезний майстер заклеює тріщину скотчем із лого KeepClean. Драматичний інфомерціал, проблема→миттєвий фікс."
+        },
+        {
+          "id": "elephant",
+          "title": "Elephant CEO mascot",
+          "text": "СЕО — теплий AI-слон (асоціація: память + довіра, «слон ніколи не забуває»), говорить на камеру про місію: ми оберігаємо спогади, а не видаляємо."
+        },
+        {
+          "id": "clones",
+          "title": "Crowd of clones",
+          "text": "Натовп ідентичних клонів на площі, а одна справжня унікальна людина загубилася серед копій. Дублікати ховають справжній спогад."
+        },
+        {
+          "id": "xerox",
+          "title": "Xerox-maniac",
+          "text": "Ксерокс без упину випльовує те саме фото, гора однакових аркушів росте до стелі. Найчистіша візуалізація «одне фото × тисячу разів»."
+        },
+        {
+          "id": "spam",
+          "title": "Spam pile / one real letter",
+          "text": "Поштова скринька забита однаковими листівками й рекламою, а один справжній лист поховано під ними. Мапиться на «good morning» форварди."
+        },
+        {
+          "id": "dialog",
+          "title": "Daughter + mom dialog",
+          "text": "Донька лагідно показує мамі на її телефоні: «це фото в тебе 9 разів, ці квіти прийшли в трьох чатах. Онуків ніхто не чіпає — зникнуть лише копії». Мама: «Oh… they're all still here»."
+        },
+        {
+          "id": "povgran",
+          "title": "POV grandmother screen rec",
+          "text": "POV від першої особи: руки бабусі гортають галерею, VO — сама бабуся: «I was scared to delete my photos…». Бачить, що сміття — це копії, не спогади."
+        }
+      ],
+      "reference": {
+        "assetSample": "Люди, оточення, дії. Будь-який екран телефону в руках = суцільний грін-скрін. \nГероїня (наскрізно):  жінка 60–68, домашній светр, природне обличчя. Затишна вітальня.\nОкремий кліп «перші кроки»: AI-генерований вертикальний short — малюк-онук (~1 рік) робить перші невпевнені кроки по килиму; легке handheld-тремтіння, ніби знято бабусиним телефоном. Цей кліп використовується двічі: як жива дія у Сцені 1 і як відео всередині екрана у Сцені 3 (той самий момент).\n\nСцена 1 — Кошмар. Онук робить перші кроки по килиму (онук у кадрі — це сон). Бабуся радісно ахає, хапає телефон, підносить, щоб зняти — захват переходить у розпач. Погляд розпачу — НА ТЕЛЕФОН - немає пам’яті. Онук обертає голову, різко показуємо його крупним планом, і він говорить з злим лицем (You had to save the memory for this moment).  Світло злегка холодне, «сновидне» (тонко). Телефон = грін-скрін.\n\nСцена 2 — Пробудження. Героїня здригається, прокидається в кріслі, кліпає очима, розгубленість → полегшення. Світло тепер тепле, нормальне. Онука в кадрі вже немає. Телефон поряд, екран вимкнений.\n\nСцена 3 — Полегшення. Героїня сама, бере реальний телефон, відкриває й переглядає ВІДЕО, яке колись зняла сама — ті самі перші кроки онука. Усмішка, зворушення, очі теплішають. У кадрі тільки вона; реагує на екран. Телефон = грін-скрін.\n\nСцена 4 — CTA. Героїня сама, тримає телефон, спокійна й задоволена. Мінімум генерації, фон чистий під пекшот.\n\n",
+        "composeSample": "Реальний UI зі скрінрекордів + AI-кліп компонуються в грін-скрін. Саби динамічні, синхрон із VO. Музика нейтральна + тригер-звуки. Логотип на згадці бренду, пекшот на CTA. Дисклеймер «AI Generated» наскрізно.\n\nСцена 1 — Кошмар. На грін-скрін: застиглий видошукач камери + системний попап «Storage Almost Full / Cannot Take Photo» (iOS/Android під плейсмент). Тригер-звук: різкий error-тон на появі попапа — пік напруги. Музика: тепла, глухне рівно на попапі. Саб/VO: «His first steps… and no room to save them.»\nСлова онука - You had to save the memory for this moment\n\nСцена 2 — Пробудження. Екран телефону темний. Музика м'яко повертається, тепла. Звук: тихий видих + сповільнений «удар серця» (relief). Саб/VO: «…just a bad dream.»\n\nСцена 3 — Полегшення. На грін-скрін: галерея, де відкрите й програється повністю те саме відео перших кроків (AI-кліп); зверху індикатор сховища «76 GB free». Музика: теплий підйом. Звук: приємний ding при старті відео. Саб/VO: «This time, she kept it. Room to spare.»\n\nСцена 4 — KeepClean/CTA. На грін-скрін: скрінрекорд застосунку — KeepClean чистить, «12 GB freed», один тап. Логотип KeepClean на згадці бренду. CTA-плашка «Free up space in one tap» + іконки App Store / Google Play. Звук: фінальний uplift. Саб/VO: «KeepClean keeps room for every moment.»\nНаскрізно: саби обов'язкові (перегляд без звуку); дисклеймер «AI Generated» — дрібна кутова плашка від першого кадру.\n\n"
+      },
+      "generationRules": ""
+    },
+    "cleanerguru": {
+      "personas": [],
+      "insights": [],
+      "offers": [],
+      "angles": [],
+      "formats": [],
+      "seeds": [],
+      "reference": {
+        "assetSample": "",
+        "composeSample": ""
+      },
+      "generationRules": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <clipPath id="ov"><circle cx="150" cy="110" r="58"/></clipPath>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC400"/><stop offset="1" stop-color="#FF9E2C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="260" rx="28" fill="#0B0E1A"/>
+  <!-- mark -->
+  <circle cx="150" cy="110" r="58" fill="#FFC400"/>
+  <rect x="150" y="110" width="100" height="100" rx="22" fill="#1E93EA"/>
+  <rect x="150" y="110" width="100" height="100" rx="22" fill="#7A2CE0" clip-path="url(#ov)"/>
+  <polygon points="172,128 172,164 200,146" fill="#FFFFFF"/>
+  <!-- wordmark -->
+  <text x="300" y="138" font-size="58" font-weight="800" letter-spacing="-1.6"><tspan fill="#FFFFFF">Creo</tspan><tspan fill="url(#g)">Guru</tspan></text>
+  <text x="302" y="170" fill="#8A90A6" font-size="18" font-weight="500" letter-spacing="0.3">creative briefs, on tap</text>
+</svg>
